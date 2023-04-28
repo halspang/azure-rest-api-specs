@@ -760,6 +760,27 @@
               "items": {
                 "type": "string"
               }
+            },
+            "serviceComponentBind": {
+              "description": "Specifies the service that a component is bound to.",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the component."
+                },
+                "serviceId": {
+                  "type": "string",
+                  "description": "ARM ID of the service to bind to."
+                },
+                "metadata": {
+                  "description": "Metadata properties to describe http scale rule.",
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              }
             }
           },
           "x-ms-client-flatten": true
